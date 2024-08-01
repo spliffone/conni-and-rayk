@@ -1,0 +1,10 @@
+{
+  "trailingComma": "all",
+  "singleQuote": false,
+  "semi": true,
+  "plugins": [
+    "prettier-plugin-organize-imports",
+    "prettier-plugin-sort-imports",
+    "prettier-plugin-tailwindcss"
+  ]
+}
