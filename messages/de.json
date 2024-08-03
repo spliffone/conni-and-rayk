@@ -1,0 +1,47 @@
+{
+  "Metadata": {
+    "title": "Conni & Rayks Hochzeit"
+  },
+  "LocaleSwitcher": {
+    "label": "Sprache ändern",
+    "locale": "{locale, select, de {🇩🇪 Deutsch} en {🇺🇸 English} other {Unbekannt}}"
+  },
+  "home": {
+    "title": "Hochzeit",
+    "date": "Samstag, 05. Juli 2025",
+    "time": "13:00",
+    "subtitle": "Zwei Hände, zwei Ringe, ein Versprechen!",
+    "couple": "Conni & Rayk",
+    "claim": "Wir haben Grund zu feiern. Das würden wir gerne gemeinsam mit Euch tun."
+  },
+  "location": {
+    "title": "Standort",
+    "name": "Draustoana Stadl",
+    "address": "Gumpertsham 4a, 83547 Babensham, Deutschland",
+    "openMap": "Karte öffnen"
+  },
+  "accommodation": {
+    "title": "Unterkünfte",
+    "info": "In direkter Nähe zum Standort gibt es leider keine Unterkünfte. Wir haben jedoch einige Optionen für dich zusammengestellt. Außerdem gibt es die Möglichkeit bei der Eventscheune seinen Camper abzustellen, nach vorheriger Absprache.",
+    "distance": "Entfernung",
+    "website": "Webseite",
+    "maps": "Karte"
+  },
+  "program": {
+    "title": "Ablauf",
+    "ceremony": "Freie Trauung",
+    "ceremonySubtitle": "mit René als Trauredner",
+    "reception": "Empfang",
+    "receptionSubtitle": "Eintreffen und Kennenlernen aller Gäste, Sektempfang mit Häppchen und Fingerfood",
+    "teatime": "Kaffee & Kuchen",
+    "teatimeSubtitle": "",
+    "dinner": "Abendessen",
+    "dinnerSubtitle": "",
+    "party": "Party",
+    "partySubtitle": "Mit Acoustic Beat Roots und DJ",
+    "end": "Ende"
+  },
+  "NotFoundPage": {
+    "title": "Seite nicht gefunden"
+  }
+}

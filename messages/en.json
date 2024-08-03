@@ -1,0 +1,47 @@
+{
+  "Metadata": {
+    "title": "Conni & Rayks Wedding"
+  },
+  "LocaleSwitcher": {
+    "label": "Change language",
+    "locale": "{locale, select, de {🇩🇪 Deutsch} en {🇺🇸 English} other {Unknown}}"
+  },
+  "home": {
+    "title": "Wedding",
+    "date": "Saturday, 05 July 2025",
+    "time": "12:30 p.m.",
+    "subtitle": "We are getting married!",
+    "couple": "Conni & Rayk",
+    "claim": "We invite you to celebrate our wedding with us."
+  },
+  "location": {
+    "title": "Location",
+    "name": "Draustoana Stadl",
+    "address": "Gumpertsham 4a, 83547 Babensham, Germany",
+    "openMap": "Open Map"
+  },
+  "accommodation": {
+    "title": "Accommodations",
+    "info": "Unfortunately, there is no accommodation in the immediate vicinity of the location. However, we have put together some options for you. There is also the option of parking your camper at the event barn, by prior arrangement.",
+    "distance": "Distance",
+    "website": "Website",
+    "maps": "Maps"
+  },
+  "program": {
+    "title": "Wedding program",
+    "ceremony": "Ceremony",
+    "ceremonySubtitle": "with René as speaker",
+    "reception": "Reception",
+    "receptionSubtitle": "Arrival and meeting of all guests, champagne reception with canapés and finger food",
+    "teatime": "Coffee & Cakes",
+    "teatimeSubtitle": "",
+    "dinner": "Dinner",
+    "dinnerSubtitle": "",
+    "party": "Party",
+    "partySubtitle": "with Acoustic Beat Roots and DJ",
+    "end": "End"
+  },
+  "NotFoundPage": {
+    "title": "Page not found"
+  }
+}
