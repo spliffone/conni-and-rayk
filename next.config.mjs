@@ -6,7 +6,7 @@ const withNextIntl = createNextIntlPlugin();
 const nextConfig = {
   distDir: "out",
   env: {
-    MAP_API_KEY: "dummy",
+    MAP_API_KEY: process.env.MAP_API_KEY,
   },
 };
 

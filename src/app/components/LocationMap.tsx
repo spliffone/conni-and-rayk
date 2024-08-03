@@ -13,7 +13,6 @@ export interface LocationMapProps {
 
 export const LocationMap = ({
   title,
-
   name,
   address,
   mapsPosition,
@@ -61,30 +60,6 @@ export const LocationMap = ({
       </SectionWrapper>
     </div>
   );
-  /*
-  return (
-    <div className="relative flex w-full flex-col px-8">
-      <h2 className="text-center font-head text-4xl font-extrabold dark:text-white">
-        {title}
-      </h2>
-      <div className="flex h-auto w-full flex-col py-3.5 text-center">
-        <span className="font-sans text-lg text-gray-700 dark:text-gray-400">
-          {name}
-        </span>
-        <span className="font-sans text-lg text-gray-700 dark:text-gray-400">
-          {address}
-        </span>
-      </div>
-      <GoogleMapsEmbed
-        apiKey={API_KEY}
-        height={300}
-        width="100%"
-        mode="place"
-        zoom="14"
-        q={mapsPosition}
-      />
-    </div>
-  );*/
 };
 
 export default LocationMap;
