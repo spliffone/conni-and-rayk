@@ -122,7 +122,7 @@ const AccommodationCard = ({
   websiteTitle: string;
 }) => {
   return (
-    <div className="min-h-90 max-w-sm rounded-lg border border-gray-200 bg-white shadow dark:border-gray-700 dark:bg-gray-800">
+    <div className="min-h-90 max-w-sm rounded-lg border border-gray-200 bg-white shadow dark:border-gray-700 dark:bg-gray-700">
       <div>
         <Image
           className="rounded-t-lg"
@@ -139,19 +139,19 @@ const AccommodationCard = ({
             {card.title}
           </h5>
         </div>
-        <span className="text-center font-sans text-gray-700 dark:text-gray-400">
+        <span className="text-center font-sans text-gray-700 dark:text-gray-200">
           {distanceTitle} {card.distance}
         </span>
         <div className="mt-4 flex justify-center md:mt-6">
           <a
             href={card.website}
-            className="flex-1 items-center rounded-lg border border-gray-200 bg-white px-4 py-2 text-center font-sans text-sm font-medium text-gray-900 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:ring-gray-100 dark:border-gray-600 dark:bg-gray-800 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white dark:focus:ring-gray-700"
+            className="flex-1 items-center rounded-lg border border-gray-200 bg-white px-4 py-2 text-center font-sans text-sm font-medium text-gray-900 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:ring-gray-100 dark:border-gray-600 dark:bg-gray-800 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white dark:focus:ring-gray-700"
           >
             {websiteTitle}
           </a>
           <a
             href={card.maps}
-            className="ms-2 flex-1 rounded-lg border border-gray-200 bg-white px-4 py-2 text-center font-sans text-sm font-medium text-gray-900 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:outline-none focus:ring-4 focus:ring-gray-100 dark:border-gray-600 dark:bg-gray-800 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white dark:focus:ring-gray-700"
+            className="ms-2 flex-1 rounded-lg border border-gray-200 bg-white px-4 py-2 text-center font-sans text-sm font-medium text-gray-900 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:outline-none focus:ring-4 focus:ring-gray-100 dark:border-gray-600 dark:bg-gray-800 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white dark:focus:ring-gray-700"
           >
             {mapsTitle}
           </a>

@@ -75,7 +75,9 @@ export default function Page({
   ];
   return (
     //${playFairFont.className}
-    <main className={`viewshell bg-background-2`}>
+    <main
+      className={`viewshell bg-background-2 dark:bg-gray-800 dark:text-white`}
+    >
       <Header links={navigation} />
       <section id="home" className="bg-cover bg-center pb-14">
         <div className="flex h-screen flex-col items-center justify-center md:h-[750px]">
@@ -125,7 +127,7 @@ export default function Page({
           <Timeline title={t("program.title")} entries={timeline} />
         </SectionWrapper>
       </section>
-      <div className="relative bg-background py-24 text-center font-sans text-gray-700">
+      <div className="relative bg-background py-24 text-center font-sans text-gray-700 dark:bg-gray-700 dark:text-gray-200">
         {`© ${new Date().getFullYear()} by `}
         <span className="font-semibold">{"Spliffone"}</span>
       </div>

@@ -33,16 +33,18 @@ const Timeline = ({
                 className={`${styles.listItem} ${index % 2 === 0 ? styles.even : styles.odd} `}
               >
                 <div className={styles.point}>
-                  <div className={`${styles.body} border border-gray-200`}>
-                    <h4 className="mb-2 font-sans font-bold text-gray-700 dark:text-gray-400">
+                  <div
+                    className={`${styles.body} border border-gray-200 bg-white dark:bg-gray-700`}
+                  >
+                    <h4 className="mb-2 font-sans font-bold text-gray-700 dark:text-gray-200">
                       {item.title}
                     </h4>
                     {item.subtitle && (
-                      <p className="mb-2 font-sans text-gray-700 dark:text-gray-400">
+                      <p className="mb-2 font-sans text-gray-700 dark:text-gray-200">
                         {item.subtitle}
                       </p>
                     )}
-                    <p className="font-sans text-gray-700 dark:text-gray-400">
+                    <p className="font-sans text-gray-700 dark:text-gray-200">
                       {item.time}
                     </p>
                   </div>

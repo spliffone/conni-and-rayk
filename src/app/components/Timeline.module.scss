@@ -1,97 +1,9 @@
-$timeline-text-color: #000000;
 $timeline-line-color: #000000;
-$timeline-body-color: #ffffff;
-
-li.odd {
-  @container viewshell (width>=48rem) {
-    .point {
-      padding-left: 1.5rem;
-      padding-right: auto;
-
-      &:before {
-        left: 0;
-        right: auto;
-      }
-
-      &:after {
-        left: -0.3125rem;
-        right: auto;
-      }
-    }
-  }
-}
 
 .list {
   container: viewshell / inline-size;
   inline-size: 100%;
   display: inline-grid;
-}
-
-.listItem {
-  display: grid;
-  grid-template-columns: 1fr 0.0625rem 1fr;
-  max-inline-size: 100%;
-  min-width: 15.625rem;
-  &:before {
-    background-color: $timeline-line-color;
-  }
-}
-
-.point {
-  position: relative;
-  grid-area: a;
-  padding: 1rem;
-  padding-inline-end: 1.5rem;
-
-  &::before,
-  &::after {
-    content: "";
-    position: absolute;
-    top: 50%;
-  }
-
-  &::before {
-    inline-size: 1.5rem;
-    height: 0.0625rem;
-    top: calc(50% - 0.03125rem - 0.5rem);
-    background-color: $timeline-line-color;
-  }
-
-  &::after {
-    background-color: $timeline-line-color;
-    height: 0.625rem;
-    width: 0.625rem;
-    top: calc(50% - 0.3125rem - 0.5rem);
-    border-radius: 50%;
-  }
-
-  > .body {
-    padding: 1rem;
-    background: $timeline-body-color;
-    color: $timeline-text-color;
-    position: relative;
-  }
-}
-
-li {
-  .point {
-    padding-right: 1.5rem;
-
-    &:before {
-      right: 0;
-    }
-
-    &:after {
-      right: -0.3125rem;
-    }
-  }
-}
-
-.line {
-  grid-area: b;
-  min-height: 100%;
-  inline-size: 0.0625rem;
-  background-color: $timeline-line-color;
 }
 
 .even {
@@ -118,5 +30,85 @@ li {
 
   li.odd {
     grid-template-areas: ". b a";
+  }
+}
+
+.listItem {
+  --timeline-line-color: #{$timeline-line-color};
+
+  @media (prefers-color-scheme: dark) {
+    --timeline-line-color: rgb(156 163 175);
+  }
+
+  display: grid;
+  grid-template-columns: 1fr 0.0625rem 1fr;
+  max-inline-size: 100%;
+  min-width: 15.625rem;
+
+  &:before {
+    background-color: var(--timeline-line-color);
+  }
+
+  &.odd {
+    @container viewshell (width>=48rem) {
+      .point {
+        padding-left: 1.5rem;
+        padding-right: auto;
+
+        &:before {
+          left: 0;
+          right: auto;
+        }
+
+        &:after {
+          left: -0.3125rem;
+          right: auto;
+        }
+      }
+    }
+  }
+
+  > .point {
+    position: relative;
+    grid-area: a;
+    padding: 1rem;
+    padding-inline-end: 1.5rem;
+    padding-right: 1.5rem;
+
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      top: 50%;
+    }
+
+    &::before {
+      right: 0;
+      inline-size: 1.5rem;
+      height: 0.0625rem;
+      top: calc(50% - 0.03125rem - 0.5rem);
+      background-color: var(--timeline-line-color);
+    }
+
+    &::after {
+      right: -0.3125rem;
+      background-color: var(--timeline-line-color);
+      height: 0.625rem;
+      width: 0.625rem;
+      top: calc(50% - 0.3125rem - 0.5rem);
+      border-radius: 50%;
+    }
+
+    > .body {
+      padding: 1rem;
+      position: relative;
+    }
+  }
+
+  > .line {
+    grid-area: b;
+    min-height: 100%;
+    inline-size: 0.0625rem;
+    background-color: var(--timeline-line-color);
   }
 }
