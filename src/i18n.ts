@@ -6,13 +6,9 @@ export default getRequestConfig(async ({ locale }) => {
   // Validate that the incoming `locale` parameter is valid
   if (!locales.includes(locale as any)) notFound();
 
+  const messageModule = await import(`../messages/${locale}.json`);
   return {
-    messages: (
-      await (locale === "de"
-        ? // When using Turbopack, this will enable HMR for `en`
-          import("../messages/de.json")
-        : import(`../messages/${locale}.json`))
-    ).default,
+    messages: messageModule.default,
     getMessageFallback() {
       return "";
     },

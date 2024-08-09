@@ -1,5 +1,4 @@
 import LocaleSwitcher from "./LocaleSwitcher";
-import { headers } from "next/headers";
 import { Link } from "@/navigation";
 import React from "react";
 
@@ -15,8 +14,6 @@ interface LinkProps {
 type LinkListProps = LinkProps[];
 
 const Header = ({ links }: { links: LinkListProps }) => {
-  const headerList = headers();
-  const pathname = headerList.get("x-current-path");
   return (
     <header>
       <nav className="sticky top-0 h-20 w-full bg-sky-900 shadow-lg dark:bg-gray-700">
@@ -26,7 +23,7 @@ const Header = ({ links }: { links: LinkListProps }) => {
               {links.map((link) => (
                 <li key={link.id}>
                   <Link
-                    className={`link inline-flex items-center ${pathname === link.href ? "link-active border-b-4" : ""} py-1 font-sans font-medium`}
+                    className={`link inline-flex items-center py-1 font-sans font-medium`}
                     href={`/${link.href}`}
                   >
                     {link.title}
