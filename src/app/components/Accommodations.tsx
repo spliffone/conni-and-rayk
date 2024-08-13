@@ -82,9 +82,7 @@ export const Accommodations = ({
 }: AccommodationsProps) => {
   return (
     <div className="relative flex w-full flex-col px-8">
-      <h2 className="text-center font-head text-4xl font-extrabold">
-        {title}
-      </h2>
+      <h2 className="text-center font-head text-4xl font-extrabold">{title}</h2>
       <p className="py-3.5 text-center font-sans text-lg text-gray-700">
         {info}
       </p>

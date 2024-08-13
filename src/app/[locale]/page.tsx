@@ -75,26 +75,27 @@ export default function Page({
   ];
   return (
     //${playFairFont.className}
-    <main
-      className={`viewshell bg-background-2`}
-    >
+    <main className={`viewshell bg-background-2`}>
       <Header links={navigation} />
       <section id="home" className="bg-cover bg-center pb-14">
         <div className="flex h-screen flex-col items-center justify-center md:h-[750px]">
           <div className="flex h-auto w-full flex-col px-8 py-3.5 text-center">
-            <p className="font-sans text-lg text-gray-700">
+            <p
+              className={`${playfairDisplay.className} text-xl text-gray-700`}
+            >
               {t("home.subtitle")}
             </p>
-            <h4 className={`${playfairDisplay.className} mb-4 mt-6 text-5xl`}>
+            <h4 className={`${playfairDisplay.className} font-bold mb-4 mt-6 text-5xl`}>
               {t("home.couple")}
             </h4>
-            <p className="font-sans text-lg text-gray-700">
+            <p
+              className={`${playfairDisplay.className} text-xl text-gray-700`}
+            >
               {t("home.date")}
             </p>
-            <p className="pt-3 font-sans text-lg text-gray-700">
-              {t("home.time")}
-            </p>
-            <p className="pt-3 text-lg text-gray-700">
+            <p
+              className={`${playfairDisplay.className} pt-8 text-xl text-gray-700`}
+            >
               {t("home.claim")}
             </p>
           </div>
