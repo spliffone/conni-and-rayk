@@ -16,7 +16,7 @@ type LinkListProps = LinkProps[];
 const Header = ({ links }: { links: LinkListProps }) => {
   return (
     <header>
-      <nav className="sticky top-0 h-20 w-full bg-sky-900 shadow-lg dark:bg-gray-700">
+      <nav className="sticky top-0 h-20 w-full bg-sky-900 shadow-lg">
         <div className="container mx-auto h-full px-4">
           <div className="flex h-full items-center justify-between">
             <ul className="me-6 ms-auto hidden gap-x-6 text-white md:flex">

@@ -19,7 +19,7 @@ export const LocationMap = ({
   openMapTitle,
 }: LocationMapProps) => {
   return (
-    <div className="bg-[#EFEFEF] py-10 dark:bg-gray-700">
+    <div className="bg-[#EFEFEF] py-10">
       <SectionWrapper>
         <div className="flex flex-col-reverse md:flex-row">
           <div className="w-full px-4 md:w-1/2">
@@ -37,10 +37,10 @@ export const LocationMap = ({
 
           <div className="mb-6 w-full px-4 md:mb-0 md:w-1/2">
             <div className="sticky top-8 text-center md:text-left">
-              <h3 className="mb-3 font-head text-3xl font-bold text-gray-700 dark:text-white">
+              <h3 className="mb-3 font-head text-3xl font-bold text-gray-700">
                 {title}
               </h3>
-              <h4 className="mb-4 font-sans text-xl font-semibold text-gray-700 md:text-2xl dark:text-white">
+              <h4 className="mb-4 font-sans text-xl font-semibold text-gray-700 md:text-2xl">
                 {name}
               </h4>
               <p className="mb-16 font-sans md:mb-10">{address}</p>

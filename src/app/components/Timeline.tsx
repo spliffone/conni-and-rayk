@@ -21,7 +21,7 @@ const Timeline = ({
 }) => {
   return (
     <div className="relative flex w-full flex-col">
-      <h2 className="text-center font-head text-4xl font-extrabold dark:text-white">
+      <h2 className="text-center font-head text-4xl font-extrabold">
         {title}
       </h2>
       <div className="flex h-auto w-full flex-col content-start px-8 py-3.5">
@@ -34,17 +34,17 @@ const Timeline = ({
               >
                 <div className={styles.point}>
                   <div
-                    className={`${styles.body} border border-gray-200 bg-white dark:bg-gray-700`}
+                    className={`${styles.body} border border-gray-200 bg-white`}
                   >
-                    <h4 className="mb-2 font-sans font-bold text-gray-700 dark:text-gray-200">
+                    <h4 className="mb-2 font-sans font-bold text-gray-700">
                       {item.title}
                     </h4>
                     {item.subtitle && (
-                      <p className="mb-2 font-sans text-gray-700 dark:text-gray-200">
+                      <p className="mb-2 font-sans text-gray-700">
                         {item.subtitle}
                       </p>
                     )}
-                    <p className="font-sans text-gray-700 dark:text-gray-200">
+                    <p className="font-sans text-gray-700">
                       {item.time}
                     </p>
                   </div>
