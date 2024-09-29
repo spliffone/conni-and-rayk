@@ -80,17 +80,15 @@ export default function Page({
       <section id="home" className="bg-cover bg-center pb-14">
         <div className="flex h-screen flex-col items-center justify-center md:h-[750px]">
           <div className="flex h-auto w-full flex-col px-8 py-3.5 text-center">
-            <p
-              className={`${playfairDisplay.className} text-xl text-gray-700`}
-            >
+            <p className={`${playfairDisplay.className} text-xl text-gray-700`}>
               {t("home.subtitle")}
             </p>
-            <h4 className={`${playfairDisplay.className} font-bold mb-4 mt-6 text-5xl`}>
+            <h4
+              className={`${playfairDisplay.className} mb-4 mt-6 text-5xl font-bold`}
+            >
               {t("home.couple")}
             </h4>
-            <p
-              className={`${playfairDisplay.className} text-xl text-gray-700`}
-            >
+            <p className={`${playfairDisplay.className} text-xl text-gray-700`}>
               {t("home.date")}
             </p>
             <p
@@ -116,7 +114,7 @@ export default function Page({
         <SectionWrapper>
           <Accommodations
             title={t("accommodation.title")}
-            info={t("accommodation.info")}
+            info={[t("accommodation.info1"), t("accommodation.info2")]}
             distanceTitle={t("accommodation.distance")}
             websiteTitle={t("accommodation.website")}
             mapsTitle={t("accommodation.maps")}

@@ -67,7 +67,7 @@ const accommodations: CardProps[] = [
 
 export interface AccommodationsProps {
   title: string;
-  info: string;
+  info: string[];
   distanceTitle: string;
   websiteTitle: string;
   mapsTitle: string;
@@ -83,9 +83,14 @@ export const Accommodations = ({
   return (
     <div className="relative flex w-full flex-col px-8">
       <h2 className="text-center font-head text-4xl font-extrabold">{title}</h2>
-      <p className="py-3.5 text-center font-sans text-lg text-gray-700">
-        {info}
-      </p>
+      {info.map((i, index) => (
+        <p
+          key={index}
+          className="py-3.5 text-center font-sans text-lg text-gray-700"
+        >
+          {i}
+        </p>
+      ))}
       <div className="flex h-auto flex-col justify-center overflow-auto py-3.5">
         <ul
           role="list"

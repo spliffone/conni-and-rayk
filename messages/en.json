@@ -21,7 +21,8 @@
   },
   "accommodation": {
     "title": "Accommodations",
-    "info": "Unfortunately, there is no accommodation in the immediate vicinity of the location. However, we have put together some options for you. There is also the option of parking your camper at the event barn, by prior arrangement.",
+    "info1": "Unfortunately, there is no accommodation in the immediate vicinity of the location. However, we have put together some options for you. There is also the option of parking your camper at the event barn, by prior arrangement.",
+    "info2": "In addition, we have reserved a limited number of rooms at the Hotel Fletzinger, so it is worth asking if there are any rooms available during our wedding.",
     "distance": "Distance",
     "website": "Website",
     "maps": "Maps"

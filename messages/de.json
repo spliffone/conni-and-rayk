@@ -21,7 +21,8 @@
   },
   "accommodation": {
     "title": "Unterkünfte",
-    "info": "In direkter Nähe zum Standort gibt es leider keine Unterkünfte. Wir haben jedoch einige Optionen für dich zusammengestellt. Außerdem gibt es die Möglichkeit bei der Eventscheune seinen Camper abzustellen, nach vorheriger Absprache.",
+    "info1": "In direkter Nähe zum Standort gibt es leider keine Unterkünfte. Wir haben jedoch einige Optionen für dich zusammengestellt. Außerdem gibt es die Möglichkeit bei der Eventscheune seinen Camper abzustellen, nach vorheriger Absprache.",
+    "info2": "Zusätzlich haben wir im Hotel Fletzinger eine begrenzte Anzahl von Zimmern reserviert, es lohnt sich also zu fragen ob unter unserer Hochzeit noch Zimmer verfügbar sind.",
     "distance": "Entfernung",
     "website": "Webseite",
     "maps": "Karte"
