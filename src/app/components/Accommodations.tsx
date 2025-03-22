@@ -82,7 +82,7 @@ export const Accommodations = ({
 }: AccommodationsProps) => {
   return (
     <div className="relative flex w-full flex-col px-8">
-      <h2 className="text-center font-head text-4xl font-extrabold">{title}</h2>
+      <h2 className="font-head text-center text-4xl font-extrabold">{title}</h2>
       {info.map((i, index) => (
         <p
           key={index}
@@ -154,7 +154,7 @@ const AccommodationCard = ({
           </a>
           <a
             href={card.maps}
-            className="ms-2 flex-1 rounded-lg border border-gray-200 bg-white px-4 py-2 text-center font-sans text-sm font-medium text-gray-900 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:outline-none focus:ring-4 focus:ring-gray-100"
+            className="ms-2 flex-1 rounded-lg border border-gray-200 bg-white px-4 py-2 text-center font-sans text-sm font-medium text-gray-900 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:ring-gray-100 focus:outline-none"
           >
             {mapsTitle}
           </a>

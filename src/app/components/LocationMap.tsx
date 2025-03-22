@@ -37,7 +37,7 @@ export const LocationMap = ({
 
           <div className="mb-6 w-full px-4 md:mb-0 md:w-1/2">
             <div className="sticky top-8 text-center md:text-left">
-              <h3 className="mb-3 font-head text-3xl font-bold text-gray-700">
+              <h3 className="font-head mb-3 text-3xl font-bold text-gray-700">
                 {title}
               </h3>
               <h4 className="mb-4 font-sans text-xl font-semibold text-gray-700 md:text-2xl">
@@ -48,7 +48,7 @@ export const LocationMap = ({
                 <a
                   href={MAP_LINK}
                   target="_blank"
-                  className="cursor-pointer rounded-md bg-contrast px-5 py-2 text-lg font-semibold text-white outline-4 outline-contrast-3 transition-all hover:bg-contrast-2 disabled:pointer-events-none disabled:opacity-50"
+                  className="bg-contrast hover:bg-contrast-2 cursor-pointer rounded-md px-5 py-2 text-lg font-semibold text-white transition-all disabled:pointer-events-none disabled:opacity-50"
                   rel="noreferrer"
                 >
                   {openMapTitle}

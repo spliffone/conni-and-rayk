@@ -14,14 +14,19 @@ export type TimelineListProps = TimelineEntryProps[];
 
 const Timeline = ({
   title,
+  description,
   entries,
 }: {
   title: string;
+  description: string;
   entries: TimelineListProps;
 }) => {
   return (
     <div className="relative flex w-full flex-col">
-      <h2 className="text-center font-head text-4xl font-extrabold">{title}</h2>
+      <h2 className="font-head text-center text-4xl font-extrabold">{title}</h2>
+      <p className="py-3.5 text-center font-sans text-lg text-gray-700">
+        {description}
+      </p>
       <div className="flex h-auto w-full flex-col content-start px-8 py-3.5">
         <div className="timeline flex h-full items-center justify-between">
           <ul role="list" className={styles.list}>

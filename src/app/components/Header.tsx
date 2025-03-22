@@ -1,5 +1,5 @@
 import LocaleSwitcher from "./LocaleSwitcher";
-import { Link } from "@/navigation";
+import { Link } from "@/i18n/navigation";
 import React from "react";
 
 interface LinkProps {
@@ -19,7 +19,7 @@ const Header = ({ links }: { links: LinkListProps }) => {
       <nav className="sticky top-0 h-20 w-full bg-sky-900 shadow-lg">
         <div className="container mx-auto h-full px-4">
           <div className="flex h-full items-center justify-between">
-            <ul className="me-6 ms-auto hidden gap-x-6 text-white md:flex">
+            <ul className="ms-auto me-6 hidden gap-x-6 text-white md:flex">
               {links.map((link) => (
                 <li key={link.id}>
                   <Link
