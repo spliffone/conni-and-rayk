@@ -68,7 +68,9 @@ export default function Page({
     },
     {
       title: t("program.party"),
-      subtitle: t("program.partySubtitle"),
+      subtitle: t.rich("program.partySubtitle", {
+        link: (chunks) => <a href="https://www.acousticbeatroots.de/" className="text-blue-600 dark:text-blue-500 hover:underline">{chunks}</a>
+      }),
       time: "21:00",
     },
     { title: t("program.end"), subtitle: "", time: "02:00" },

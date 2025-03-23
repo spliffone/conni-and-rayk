@@ -1,11 +1,11 @@
 import styles from "./Timeline.module.scss";
-import React from "react";
+import React, { ReactNode } from "react";
 
 interface TimelineEntryProps {
   // The text to display
   title: string;
   // Additional description
-  subtitle?: string;
+  subtitle?:  | ReactNode;
   // Starttime
   time: string;
 }

@@ -41,7 +41,8 @@
     "dinner": "Abendessen",
     "dinnerSubtitle": "Buffet mit Show Cooking",
     "party": "Party",
-    "partySubtitle": "mit Acoustic Beat Roots und DJ",
+    "partySubtitle": "mit <link>Acoustic Beat Roots und DJ</link>",
+
     "end": "Ende"
   }
 }
