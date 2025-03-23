@@ -34,16 +34,15 @@ $timeline-line-color: #000000;
 }
 
 .listItem {
-  --timeline-line-color: #{$timeline-line-color};
-
-  @media (prefers-color-scheme: dark) {
-    --timeline-line-color: rgb(156 163 175);
-  }
-
   display: grid;
   grid-template-columns: 1fr 0.0625rem 1fr;
   max-inline-size: 100%;
   min-width: 15.625rem;
+
+  --timeline-line-color: #{$timeline-line-color};
+  @media (prefers-color-scheme: dark) {
+    --timeline-line-color: rgb(156 163 175);
+  }
 
   &:before {
     background-color: var(--timeline-line-color);

@@ -1,15 +1,11 @@
 "use client";
 
 import { ChangeEvent, ReactNode, useTransition } from "react";
-import { useRouter, usePathname } from "@/navigation";
+import { useRouter, usePathname } from "@/i18n/navigation";
 import { useParams } from "next/navigation";
 import clsx from "clsx";
 
-type Props = {
-  children: ReactNode;
-  defaultValue: string;
-  label: string;
-};
+type Props = { children: ReactNode; defaultValue: string; label: string };
 
 export default function LocaleSwitcherSelect({
   children,
@@ -43,7 +39,7 @@ export default function LocaleSwitcherSelect({
     >
       <p className="sr-only">{label}</p>
       <select
-        className="inline-flex bg-transparent py-1 pl-2 pr-6 font-sans font-medium text-white"
+        className="inline-flex bg-transparent py-1 pr-6 pl-2 font-sans font-medium text-white"
         defaultValue={defaultValue}
         disabled={isPending}
         onChange={onSelectChange}

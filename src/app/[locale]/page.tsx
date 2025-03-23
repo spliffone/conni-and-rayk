@@ -1,44 +1,48 @@
 import Timeline, { TimelineListProps } from "../components/Timeline";
-import { unstable_setRequestLocale } from "next-intl/server";
 import SectionWrapper from "../components/SectionWrapper";
 import Accommodations from "../components/Accommodations";
 import LocationMap from "../components/LocationMap";
+import { setRequestLocale } from "next-intl/server";
 import { getTranslations } from "next-intl/server";
 import { useTranslations } from "next-intl";
 import Header from "../components/Header";
 import { playfairDisplay } from "@/fonts";
+import { use } from "react";
 
 export async function generateMetadata({
-  params: { locale },
+  params,
 }: {
-  params: { locale: string };
+  params: Promise<{ locale: string }>;
 }) {
+  const { locale } = await params;
   const t = await getTranslations({ locale, namespace: "Metadata" });
-  return {
-    title: t("title"),
-  };
+  return { title: t("title") };
 }
 
 export default function Page({
-  params: { locale },
+  params,
 }: {
-  params: { locale: string };
+  params: Promise<{ locale: string }>;
 }) {
-  unstable_setRequestLocale(locale);
+  const { locale } = use(params);
+
+  // Enable static rendering
+  setRequestLocale(locale);
   const t = useTranslations();
   const navigation = [
     { title: t("home.title"), id: "home", href: "#home" },
     { title: t("location.title"), id: "location", href: "#location" },
     {
+      title: t("arrivalDeparture.title"),
+      id: "arrival-departure",
+      href: "#arrival-departure",
+    },
+    {
       title: t("accommodation.title"),
       id: "accommodation",
       href: "#accommodation",
     },
-    {
-      title: t("program.title"),
-      id: "program",
-      href: "#program",
-    },
+    { title: t("program.title"), id: "program", href: "#program" },
   ];
 
   const timeline: TimelineListProps = [
@@ -67,11 +71,7 @@ export default function Page({
       subtitle: t("program.partySubtitle"),
       time: "21:00",
     },
-    {
-      title: t("program.end"),
-      subtitle: "",
-      time: "02:00",
-    },
+    { title: t("program.end"), subtitle: "", time: "02:00" },
   ];
   return (
     //${playFairFont.className}
@@ -84,7 +84,7 @@ export default function Page({
               {t("home.subtitle")}
             </p>
             <h4
-              className={`${playfairDisplay.className} mb-4 mt-6 text-5xl font-bold`}
+              className={`${playfairDisplay.className} mt-6 mb-4 text-5xl font-bold`}
             >
               {t("home.couple")}
             </h4>
@@ -110,6 +110,18 @@ export default function Page({
           />
         </SectionWrapper>
       </section>
+      <section id="arrival-departure" className="pb-14">
+        <SectionWrapper>
+          <div className="relative flex w-full flex-col px-8">
+            <h2 className="font-head text-center text-4xl font-extrabold">
+              {t("arrivalDeparture.title")}
+            </h2>
+            <p className="py-3.5 text-center font-sans text-lg text-gray-700">
+              {t("arrivalDeparture.description")}
+            </p>
+          </div>
+        </SectionWrapper>
+      </section>
       <section id="accommodation" className="pb-14">
         <SectionWrapper>
           <Accommodations
@@ -123,10 +135,14 @@ export default function Page({
       </section>
       <section id="program" className="pb-14">
         <SectionWrapper>
-          <Timeline title={t("program.title")} entries={timeline} />
+          <Timeline
+            title={t("program.title")}
+            description={t("program.description")}
+            entries={timeline}
+          />
         </SectionWrapper>
       </section>
-      <div className="relative bg-background py-24 text-center font-sans text-gray-700">
+      <div className="bg-background relative py-24 text-center font-sans text-gray-700">
         {`© ${new Date().getFullYear()} by `}
         <span className="font-semibold">{"Spliffone"}</span>
       </div>

@@ -1,7 +1,5 @@
 {
-  "Metadata": {
-    "title": "Conni & Rayks Hochzeit"
-  },
+  "Metadata": { "title": "Conni & Rayks Hochzeit" },
   "LocaleSwitcher": {
     "label": "Sprache ändern",
     "locale": "{locale, select, de {🇩🇪 Deutsch} en {🇺🇸 English} other {Unbekannt}}"
@@ -19,9 +17,13 @@
     "address": "Gumpertsham 4a, 83547 Babensham, Deutschland",
     "openMap": "Karte öffnen"
   },
+  "arrivalDeparture": {
+    "title": "An-/Abfahrt",
+    "description": "Die Anfahrt muss von den Gästen selbst organisiert werden aber von 11:00 - 2:00 Uhr haben wir ein Shuttle bereitstehen. Der Shuttle Fahrer würde sich über eine kleine Spende freuen."
+  },
   "accommodation": {
     "title": "Unterkünfte",
-    "info1": "In direkter Nähe zum Standort gibt es leider keine Unterkünfte. Wir haben jedoch einige Optionen für dich zusammengestellt. Außerdem gibt es die Möglichkeit bei der Eventscheune seinen Camper abzustellen, nach vorheriger Absprache.",
+    "info1": "In direkter Nähe zum Standort gibt es leider keine Unterkünfte. Wir haben jedoch einige Optionen für dich zusammengestellt. Außerdem gibt es die Möglichkeit bei der Eventscheune seinen Camper abzustellen, nach vorheriger Absprache. Die Kosten für das Unterstellen belaufen sich auf etwa 15 Euro.",
     "info2": "Zusätzlich haben wir im Hotel Fletzinger eine begrenzte Anzahl von Zimmern reserviert, es lohnt sich also zu fragen ob unter unserer Hochzeit noch Zimmer verfügbar sind.",
     "distance": "Entfernung",
     "website": "Webseite",
@@ -29,6 +31,7 @@
   },
   "program": {
     "title": "Ablauf",
+    "description": "Bei schönem Wetter finden die Trauung und Feier im Freien statt. Bringt also bitte Sonnencreme und Sonnenhut und bei Laune auch die Badehose mit. Auch eine Picknickdecke kann nicht schaden, um den Tag so gemütlich wie möglich zu gestalten. Am liebsten wäre es uns wenn die Feier eine Art Kurzurlaub für Euch wird.",
     "ceremony": "Freie Trauung",
     "ceremonySubtitle": "mit René als Trauredner",
     "reception": "Empfang",
@@ -36,7 +39,7 @@
     "teatime": "Kaffee & Kuchen",
     "teatimeSubtitle": "",
     "dinner": "Abendessen",
-    "dinnerSubtitle": "",
+    "dinnerSubtitle": "Buffet mit Show Cooking",
     "party": "Party",
     "partySubtitle": "mit Acoustic Beat Roots und DJ",
     "end": "Ende"

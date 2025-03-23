@@ -1,9 +1,15 @@
 @import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap");
 
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
 
+@theme {
+  --color-contrast: #ce7bb0;
+  --color-contrast-2: #a267ac;
+  --color-contrast-3: #6867ac;
+  --color-background: #efefef;
+  --color-background-2: #f9f9f9;
+  --font-display: "ui-sans-serif", "system-ui";
+}
 .link-active {
   border-color: rgb(99, 102, 241);
 }

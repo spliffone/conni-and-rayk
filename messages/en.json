@@ -1,7 +1,5 @@
 {
-  "Metadata": {
-    "title": "Conni & Rayks Wedding"
-  },
+  "Metadata": { "title": "Conni & Rayks Wedding" },
   "LocaleSwitcher": {
     "label": "Change language",
     "locale": "{locale, select, de {🇩🇪 Deutsch} en {🇺🇸 English} other {Unknown}}"
@@ -19,16 +17,21 @@
     "address": "Gumpertsham 4a, 83547 Babensham, Germany",
     "openMap": "Open Map"
   },
+  "arrivalDeparture": {
+    "title": "Transportation",
+    "description": "While guests are responsible for their arrival, a convenient shuttle service will be available from 11:00 PM to 2:00 AM. A small donation to the driver is appreciated."
+  },
   "accommodation": {
     "title": "Accommodations",
-    "info1": "Unfortunately, there is no accommodation in the immediate vicinity of the location. However, we have put together some options for you. There is also the option of parking your camper at the event barn, by prior arrangement.",
+    "info1": "Unfortunately, there is no accommodation in the immediate vicinity of the location. However, we have put together some options for you. There is also the option of parking your camper at the event barn, by prior arrangement. The cost of parking is around 15 euros.",
     "info2": "In addition, we have reserved a limited number of rooms at the Hotel Fletzinger, so it is worth asking if there are any rooms available during our wedding.",
     "distance": "Distance",
     "website": "Website",
     "maps": "Maps"
   },
   "program": {
-    "title": "Wedding program",
+    "title": "Program",
+    "description": "We're hoping for sunshine, as our wedding ceremony and celebration will be outdoors! Pack your sunscreen, sun hat, and swimwear (if you're feeling adventurous) to make the most of the day. A picnic blanket is also a great idea for lounging. We're aiming for a relaxed, mini-holiday vibe, so come ready to unwind and enjoy!",
     "ceremony": "Ceremony",
     "ceremonySubtitle": "with René as speaker",
     "reception": "Reception",
@@ -36,7 +39,7 @@
     "teatime": "Coffee & Cakes",
     "teatimeSubtitle": "",
     "dinner": "Dinner",
-    "dinnerSubtitle": "",
+    "dinnerSubtitle": "Buffet with show cooking",
     "party": "Party",
     "partySubtitle": "with Acoustic Beat Roots and DJ",
     "end": "End"
