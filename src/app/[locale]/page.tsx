@@ -64,7 +64,7 @@ export default function Page({
     {
       title: t("program.dinner"),
       subtitle: t("program.dinnerSubtitle"),
-      time: "19:00",
+      time: "18:30",
     },
     {
       title: t("program.party"),
